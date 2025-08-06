@@ -1,0 +1,282 @@
+#header {
+    background: #373737;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding: 30px;
+    align-items: center;
+    gap: 300px;
+
+}
+
+.nav-contact {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-list {
+    display: flex;
+    gap: 20px;
+}
+
+#sideber {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 10px;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    backdrop-filter: blur(10px);
+    gap: 30px;
+    display: none;
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+.sideber li {
+    width: 100%;
+}
+
+.sideber a {
+    width: 100%;
+}
+
+@media (max-width:1199px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        padding: 30px;
+        align-items: center;
+        gap: 100px;
+
+    }
+}
+  /* ------------------------------------------footerrrr */
+  #footer {
+      background: #373737;
+  }
+
+  .footer-content {
+      background: #272727;
+      padding: 40px;
+  }
+
+
+  .footer-cards {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      align-items: center;
+      justify-content: start;
+      gap: 30px;
+  }
+
+  .footer-img {
+      display: flex;
+      gap: 20px;
+      align-items: start;
+  }
+
+  .footer-img p {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 13px;
+      color: white;
+      line-height: 17px;
+      letter-spacing: 0%;
+      padding-bottom: 30px;
+  }
+
+  .footer-card-img {
+      max-width: 368px;
+      width: 100%;
+  }
+
+  .footer-card-img p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 13px;
+      color: white;
+      line-height: 20px;
+      letter-spacing: 0%;
+  }
+
+  .footer-card-info h1 {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 17px;
+      color: white;
+      line-height: 28px;
+      letter-spacing: 0%;
+      padding-bottom: 15px;
+      /* padding-top: 10px; */
+  }
+
+  .footer-card-info p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      color: white;
+      line-height: 24px;
+      letter-spacing: 0%;
+  }
+
+  .info-meneger p {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 17px;
+      color: white;
+      line-height: 28px;
+      letter-spacing: 0%;
+      opacity: 0.5;
+  }
+
+  .info-mesenger {
+      display: flex;
+      gap: 13px;
+      padding-top: 23px;
+      align-items: center;
+  }
+
+  .footer-card-contact h1 {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 17px;
+      color: white;
+      line-height: 28px;
+      letter-spacing: 0%;
+      padding-bottom: 10px;
+  }
+
+  .footer-card-contact h2 {
+      font-family: Montserrat;
+      font-weight: 600;
+      font-size: 20px;
+      color: white;
+      line-height: 28px;
+      letter-spacing: 0%;
+      padding-bottom: 10px;
+  }
+
+  .footer-card-contact p {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 14px;
+      color: white;
+      line-height: 19px;
+      letter-spacing: 0%;
+      padding-bottom: 10px;
+  }
+
+  .footer-card-info {
+      max-width: 420px;
+      width: 100%;
+  }
+
+  .footer-back {
+      display: grid;
+      grid-template-columns: repeat(2, auto);
+      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 30px;
+      gap: 20px;
+  }
+
+  .footer-back pre {
+      font-family: Montserrat;
+      font-weight: 400;
+      font-size: 12px;
+      color: white;
+      line-height: 21px;
+      letter-spacing: 0%;
+  }
+
+  @media (max-width:938px) {
+      .footer-cards {
+          display: grid;
+          grid-template-columns: repeat(2, auto);
+      }
+
+  }
+
+  @media (max-width:860px) {
+      .footer-back {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+  }
+
+  @media (max-width:719px) {
+      .footer-back {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+      .info-mesenger {
+          gap: 28px;
+      }
+
+      .footer-cards {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+  }
+
+  @media (max-width:719px) {
+      .footer-back pre {
+          display: none;
+      }
+  }
+
+  @media (max-width:412px) {
+      .footer-img {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+      }
+
+      .info-mesenger {
+          gap: 16px;
+      }
+  }
+@media (max-width:800px) {
+    .location {
+        display: none;
+    }
+
+    .number {
+        display: none;
+    }
+
+    .icon-list {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+}
