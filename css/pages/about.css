@@ -16,6 +16,11 @@
 
 }
 
+#about{
+    background-image: url(../../img/about.img/cheese.png);
+    height: 610px;
+}
+
 .nav-contact {
     display: flex;
     gap: 10px;
@@ -40,15 +45,76 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    backdrop-filter: blur(10px);
     gap: 30px;
     display: none;
     padding-top: 10px;
     text-align: center;
 }
 
+#toggle-btn{
+    background-color: transparent;
+    border: none;
+}
 
+.toggle-menus{
+    transform: translateX(-100%);
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 30px;
+    transition: 1s;
+}
+.toggle-menus li{
+    border: 1px solid white;
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+}
+.toggle-menus li a{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.toggle-menus a:hover{
+    background-color: red;
+}
+.show{
+    transform: translateX(0%);
+}
 
+#exit{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    position: absolute;
+    color: white;
+    top: 20px;
+    font-size: 24px;
+    left: 10px;
+    justify-content: center;
+}
+
+.about-cont{
+    padding-top: 300px;
+    gap: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .sideber li {
     width: 100%;
 }

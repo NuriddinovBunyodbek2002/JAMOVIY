@@ -1,18 +1,9 @@
+const toggleBtn = document.getElementById("toggle-btn");
+const menusToggle = document.getElementById("menus-toggle");
+const closeBtn = document.getElementById("exit")
 
+toggleBtn.addEventListener("click" , () => {    menusToggle.classList.add("show")})
 
-
-// function showSideber(){
-// const sideber = document.querySelector('sideber')
-// sideber.style.display='block'
-// }
-// function closeSideber() {
-// const sideber = document.querySelector('sideber')
-// sideber.style.display = 'none'
-// }
-function showSideber() {
-    document.getElementById("sideber").style.display = "flex";
-}
-
-function closeSideber() {
-    document.getElementById("sideber").style.display = "none";
-}
+closeBtn.addEventListener("click" , () => {
+    menusToggle.classList.remove("show")
+})

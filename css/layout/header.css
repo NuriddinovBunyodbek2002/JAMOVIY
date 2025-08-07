@@ -6,6 +6,13 @@
     width: 100%;
     height: auto;
     /* padding-top: 30px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -17,6 +24,60 @@
     
 }
 
+#toggle-btn{
+    background-color: transparent;
+    border: none;
+}
+
+.toggle-menus{
+    transform: translateX(-100%);
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000;
+    gap: 30px;
+    transition: 1s;
+}
+.toggle-menus li{
+    border: 1px solid white;
+    max-width: 300px;
+    width: 100%;
+    height: 50px;
+}
+.toggle-menus li a{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.toggle-menus a:hover{
+    background-color: red;
+}
+.show{
+    transform: translateX(0%);
+}
+
+#exit{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    width: 60px;
+    position: absolute;
+    color: white;
+    top: 20px;
+    font-size: 24px;
+    left: 10px;
+    justify-content: center;
+}
 .nav-contact {
     display: flex;
     gap: 10px;
@@ -41,7 +102,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    backdrop-filter: blur(10px);
+
     gap: 30px;
     display: none;
     padding-top: 10px;
