@@ -69,7 +69,7 @@
 }
   /* ------------------------------------------footerrrr */
   #footer {
-      background: #373737;
+      background: #272727;
   }
 
   .footer-content {
@@ -96,7 +96,7 @@
       font-family: Montserrat;
       font-weight: 600;
       font-size: 13px;
-      color: white;
+      color: #ADACAC;
       line-height: 17px;
       letter-spacing: 0%;
       padding-bottom: 30px;
@@ -111,7 +111,7 @@
       font-family: Montserrat;
       font-weight: 400;
       font-size: 13px;
-      color: white;
+      color: #ADACAC;
       line-height: 20px;
       letter-spacing: 0%;
   }
@@ -120,7 +120,7 @@
       font-family: Montserrat;
       font-weight: 600;
       font-size: 17px;
-      color: white;
+      color: #ADACAC;
       line-height: 28px;
       letter-spacing: 0%;
       padding-bottom: 15px;
@@ -131,7 +131,7 @@
       font-family: Montserrat;
       font-weight: 400;
       font-size: 14px;
-      color: white;
+      color: #ADACAC;
       line-height: 24px;
       letter-spacing: 0%;
   }
@@ -140,7 +140,7 @@
       font-family: Montserrat;
       font-weight: 600;
       font-size: 17px;
-      color: white;
+      color: #ADACAC;
       line-height: 28px;
       letter-spacing: 0%;
       opacity: 0.5;
@@ -157,7 +157,7 @@
       font-family: Montserrat;
       font-weight: 600;
       font-size: 17px;
-      color: white;
+      color: #ADACAC;
       line-height: 28px;
       letter-spacing: 0%;
       padding-bottom: 10px;
@@ -167,7 +167,7 @@
       font-family: Montserrat;
       font-weight: 600;
       font-size: 20px;
-      color: white;
+      color: #ADACAC;
       line-height: 28px;
       letter-spacing: 0%;
       padding-bottom: 10px;
@@ -177,7 +177,7 @@
       font-family: Montserrat;
       font-weight: 400;
       font-size: 14px;
-      color: white;
+      color: #ADACAC;
       line-height: 19px;
       letter-spacing: 0%;
       padding-bottom: 10px;
@@ -279,4 +279,195 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+#map{
+    background-color: #272727;
+    padding-bottom: 70px;
+}
+
+.map-content h1{
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-color: #373737;
+}
+
+.card-img input{
+    max-width: 642px;
+    width: 100%;
+    height: 59px;
+    color: white;
+    background-color: #272727;
+    border: 1px solid #4F4F4F;
+    border-radius: 20px;
+}
+
+.card-img{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+
+.card-img ul{
+    display: grid;
+    grid-template-columns: repeat(5 , auto);
+    gap: 20px;
+}
+
+
+.map-card{
+    display: flex;
+    gap: 30px;
+}
+
+
+.map-cardinfo{
+    max-width: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.map{
+    width: 85%;
+}
+
+.map-card-card button{
+    color: white;
+    max-width: 300px;
+    width: 100%;
+    height: 56px;
+    border: 2px solid #4F4F4F;
+    border-radius: 27px;
+    text-align: center;
+    background-color: #272727;
+    margin-bottom: 20px;
+}
+
+
+.map-card-card p{
+    color: #828282;
+    font-size: 14px;
+    line-height: 140%;
+}
+
+.map-card-card{
+    max-width: 300px;
+    width: 100%;
+}
+
+.map-card-card strong{
+    color: #828282;
+    line-height: 140%;
+}
+
+
+@media (max-width:1043px) {
+    .map-card{
+        flex-direction: column;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .map-card-card{
+        width: 300px;
+    }
+
+    .map{
+        width: 100%;
+    }
+
+    .map-cardinfo{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width:855px) {
+    .card-img{
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+#izi{
+    background-color: #373737;
+}
+
+.izi-content{
+    display: flex;
+    gap: 140px;
+    padding-bottom: 90px;
+    align-items: center;
+}
+
+
+.izi-content img{
+    width: 100%;
+}
+
+
+.izi-card{
+    max-width: 410px;
+    width: 100%;
+}
+
+.izi-card h2{
+    color: white;
+    font-size: 24px;
+}
+
+
+.izi-card p{
+    color: white;
+    font-size: 16px;
+}
+
+
+@media (max-width:1033px) {
+    .izi-content{
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+}
+
+.last-content{
+    text-align: center;
+    justify-content: center;
+}
+
+.last-content h3{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+
+.last-content button{
+    color: white;
+    background-color: #272727;
+    width: 276px;
+    height: 60px;
+    border-radius: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
 }
